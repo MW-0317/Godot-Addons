@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bnnwujkekkcv4"]
+
+[ext_resource type="Shader" uid="uid://bet2p2066w7nf" path="res://addons/mikroutils/Shaders/Placeholder.tres" id="1_cdlww"]
+[ext_resource type="Script" uid="uid://c1jvwneq3jxc2" path="res://addons/mikroutils/Scripts/PlaceholderTexture.gd" id="2_ggg1r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i5rml"]
+render_priority = 0
+shader = ExtResource("1_cdlww")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a07p1"]
+material = SubResource("ShaderMaterial_i5rml")
+
+[node name="Test" type="Node3D" unique_id=548956818]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=343160988]
+instance_shader_parameters/Color1 = Color(0, 0, 0, 1)
+instance_shader_parameters/Color2 = Color(0, 0, 0, 1)
+instance_shader_parameters/Division = 0.0
+mesh = SubResource("PlaneMesh_a07p1")
+script = ExtResource("2_ggg1r")
+visual_shader = ExtResource("1_cdlww")
