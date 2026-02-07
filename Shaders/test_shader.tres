@@ -1,0 +1,68 @@
+[gd_resource type="VisualShader" format=3 uid="uid://pq8s4oatosgv"]
+
+[sub_resource type="VisualShaderNodeTexture3DParameter" id="VisualShaderNodeTexture3DParameter_5761d"]
+parameter_name = "Texture3DParameter"
+
+[sub_resource type="VisualShaderNodeTransformParameter" id="VisualShaderNodeTransformParameter_cuklj"]
+parameter_name = "TransformParameter"
+
+[sub_resource type="VisualShaderNodeVec2Parameter" id="VisualShaderNodeVec2Parameter_wlxet"]
+parameter_name = "Vector2Parameter"
+
+[sub_resource type="VisualShaderNodeVec3Parameter" id="VisualShaderNodeVec3Parameter_mvh3m"]
+parameter_name = "Vector3Parameter"
+
+[sub_resource type="VisualShaderNodeVec4Parameter" id="VisualShaderNodeVec4Parameter_2qu3s"]
+parameter_name = "Vector4Parameter"
+
+[sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_lj36k"]
+parameter_name = "ColorParameter"
+
+[sub_resource type="VisualShaderNodeBooleanParameter" id="VisualShaderNodeBooleanParameter_3o4ov"]
+parameter_name = "BooleanParameter"
+
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_0ymtu"]
+parameter_name = "FloatParameter"
+
+[sub_resource type="VisualShaderNodeIntParameter" id="VisualShaderNodeIntParameter_4085o"]
+parameter_name = "IntParameter"
+
+[sub_resource type="VisualShaderNodeUIntParameter" id="VisualShaderNodeUIntParameter_lmptx"]
+parameter_name = "UIntParameter"
+
+[sub_resource type="VisualShaderNodeCubemapParameter" id="VisualShaderNodeCubemapParameter_fvoof"]
+parameter_name = "CubemapParameter"
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_q2qc3"]
+parameter_name = "Texture2DParameter"
+
+[sub_resource type="VisualShaderNodeTexture2DArrayParameter" id="VisualShaderNodeTexture2DArrayParameter_h42pb"]
+parameter_name = "Texture2DArrayParameter"
+
+[resource]
+nodes/vertex/2/node = SubResource("VisualShaderNodeColorParameter_lj36k")
+nodes/vertex/2/position = Vector2(-1080, -20)
+nodes/vertex/3/node = SubResource("VisualShaderNodeBooleanParameter_3o4ov")
+nodes/vertex/3/position = Vector2(-1080, 160)
+nodes/vertex/4/node = SubResource("VisualShaderNodeFloatParameter_0ymtu")
+nodes/vertex/4/position = Vector2(-1080, 320)
+nodes/vertex/5/node = SubResource("VisualShaderNodeIntParameter_4085o")
+nodes/vertex/5/position = Vector2(-1080, 520)
+nodes/vertex/6/node = SubResource("VisualShaderNodeUIntParameter_lmptx")
+nodes/vertex/6/position = Vector2(-820, 520)
+nodes/vertex/7/node = SubResource("VisualShaderNodeCubemapParameter_fvoof")
+nodes/vertex/7/position = Vector2(-500, -20)
+nodes/vertex/8/node = SubResource("VisualShaderNodeTexture2DParameter_q2qc3")
+nodes/vertex/8/position = Vector2(-500, 300)
+nodes/vertex/9/node = SubResource("VisualShaderNodeTexture2DArrayParameter_h42pb")
+nodes/vertex/9/position = Vector2(-180, -20)
+nodes/vertex/10/node = SubResource("VisualShaderNodeTexture3DParameter_5761d")
+nodes/vertex/10/position = Vector2(-180, 300)
+nodes/vertex/11/node = SubResource("VisualShaderNodeTransformParameter_cuklj")
+nodes/vertex/11/position = Vector2(-1080, 760)
+nodes/vertex/12/node = SubResource("VisualShaderNodeVec2Parameter_wlxet")
+nodes/vertex/12/position = Vector2(-500, 780)
+nodes/vertex/13/node = SubResource("VisualShaderNodeVec3Parameter_mvh3m")
+nodes/vertex/13/position = Vector2(-240, 780)
+nodes/vertex/14/node = SubResource("VisualShaderNodeVec4Parameter_2qu3s")
+nodes/vertex/14/position = Vector2(20, 780)
