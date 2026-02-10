@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bnnwujkekkcv4"]
 
-[ext_resource type="Shader" uid="uid://pq8s4oatosgv" path="res://Shaders/test_shader.tres" id="1_cdlww"]
-[ext_resource type="Script" uid="uid://c1jvwneq3jxc2" path="res://addons/mikroutils/Scripts/PlaceholderTexture.gd" id="2_ggg1r"]
+[ext_resource type="Shader" uid="uid://bet2p2066w7nf" path="res://addons/mikroutils/Shaders/Placeholder.tres" id="1_cdlww"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i5rml"]
 render_priority = 0
 shader = ExtResource("1_cdlww")
+shader_parameter/Color1 = Color(0.36526385, 0.99999994, 0.33595186, 1)
+shader_parameter/Color2 = Color(0.08480095, 0.5515411, 0, 1)
+shader_parameter/Division = 10.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_a07p1"]
 material = SubResource("ShaderMaterial_i5rml")
@@ -14,17 +16,3 @@ material = SubResource("ShaderMaterial_i5rml")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=343160988]
 mesh = SubResource("PlaneMesh_a07p1")
-script = ExtResource("2_ggg1r")
-ColorParameter = null
-BooleanParameter = null
-FloatParameter = null
-IntParameter = null
-UIntParameter = null
-CubemapParameter = null
-Texture2DParameter = null
-Texture2DArrayParameter = null
-Texture3DParameter = null
-TransformParameter = null
-Vector2Parameter = null
-Vector3Parameter = null
-Vector4Parameter = null

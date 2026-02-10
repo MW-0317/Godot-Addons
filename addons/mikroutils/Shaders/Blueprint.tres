@@ -26,7 +26,6 @@ op_type = 0
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_ajf3s"]
 parameter_name = "Color1"
-qualifier = 2
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_6bjmj"]
@@ -36,7 +35,6 @@ input_name = "uv"
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_mwx2c"]
 parameter_name = "Color2"
-qualifier = 2
 default_value_enabled = true
 default_value = Color(0, 0, 0, 1)
 
@@ -48,10 +46,11 @@ operator = 2
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_ajf3s"]
 parameter_name = "Division"
-qualifier = 2
 hint = 2
 max = 50.0
 step = 1.0
+default_value_enabled = true
+default_value = 2.0
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_ajf3s"]
 default_input_values = [0, Vector2(0, 0), 1, Vector2(0, 0)]
@@ -59,7 +58,6 @@ op_type = 0
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_6bjmj"]
 parameter_name = "Offset_by_time"
-qualifier = 2
 hint = 2
 step = 0.001
 
@@ -71,8 +69,6 @@ input_name = "time"
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_mwx2c"]
 parameter_name = "Size"
-qualifier = 2
-hint = 2
 step = 0.001
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_hv2vc"]

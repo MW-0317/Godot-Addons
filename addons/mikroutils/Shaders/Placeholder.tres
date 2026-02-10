@@ -32,7 +32,6 @@ input_name = "uv"
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_231re"]
 parameter_name = "Color1"
-qualifier = 2
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_m2yhf"]
@@ -45,13 +44,11 @@ operator = 2
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_m2yhf"]
 parameter_name = "Color2"
-qualifier = 2
 default_value_enabled = true
 default_value = Color(0, 0, 0, 1)
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_m2yhf"]
 parameter_name = "Division"
-qualifier = 2
 hint = 2
 max = 50.0
 step = 1.0
@@ -60,7 +57,7 @@ step = 1.0
 nodes/vertex/0/position = Vector2(540, -40)
 nodes/fragment/0/position = Vector2(1600, 40)
 nodes/fragment/2/node = SubResource("VisualShaderNodeInput_m2yhf")
-nodes/fragment/2/position = Vector2(-1040, 320)
+nodes/fragment/2/position = Vector2(-1120, 320)
 nodes/fragment/11/node = SubResource("VisualShaderNodeVectorDecompose_231re")
 nodes/fragment/11/position = Vector2(-740, 300)
 nodes/fragment/12/node = SubResource("VisualShaderNodeIntFunc_h5bkf")
@@ -89,4 +86,4 @@ nodes/fragment/27/node = SubResource("VisualShaderNodeColorParameter_m2yhf")
 nodes/fragment/27/position = Vector2(520, 840)
 nodes/fragment/28/node = SubResource("VisualShaderNodeFloatParameter_m2yhf")
 nodes/fragment/28/position = Vector2(-960, 520)
-nodes/fragment/connections = PackedInt32Array(2, 0, 11, 0, 11, 0, 15, 0, 15, 0, 13, 0, 11, 1, 14, 0, 14, 0, 12, 0, 17, 0, 16, 0, 13, 0, 18, 0, 12, 0, 18, 1, 18, 0, 17, 0, 16, 0, 25, 1, 24, 0, 25, 0, 25, 0, 26, 0, 27, 0, 24, 1, 27, 0, 26, 1, 20, 0, 24, 0, 26, 0, 0, 0, 28, 0, 15, 1, 28, 0, 14, 1)
+nodes/fragment/connections = PackedInt32Array(11, 0, 15, 0, 15, 0, 13, 0, 11, 1, 14, 0, 14, 0, 12, 0, 17, 0, 16, 0, 13, 0, 18, 0, 12, 0, 18, 1, 18, 0, 17, 0, 16, 0, 25, 1, 24, 0, 25, 0, 25, 0, 26, 0, 27, 0, 24, 1, 27, 0, 26, 1, 20, 0, 24, 0, 28, 0, 15, 1, 28, 0, 14, 1, 26, 0, 0, 0, 2, 0, 11, 0)

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cea44rls75dos"]
+
+[ext_resource type="Shader" uid="uid://bet2p2066w7nf" path="res://addons/mikroutils/Shaders/Placeholder.tres" id="1_bqjkq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v41x3"]
+render_priority = 0
+shader = ExtResource("1_bqjkq")
+shader_parameter/Color1 = Color(0, 0, 0, 1)
+shader_parameter/Color2 = Color(0.21230483, 0.21230483, 0.21230483, 1)
+shader_parameter/Division = 10.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s284d"]
+material = SubResource("ShaderMaterial_v41x3")
+
+[node name="Test" type="Node3D" unique_id=1579219075]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1309725043]
+mesh = SubResource("PlaneMesh_s284d")
