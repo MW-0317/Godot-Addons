@@ -18,10 +18,24 @@ settings/0/end_bone = 34
 settings/0/use_virtual_end = false
 settings/0/extend_end_bone = false
 
-[node name="r_arm_TIK2" type="TwoBoneIK3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="2" unique_id=1150070139]
+[node name="l_arm_TIK" type="TwoBoneIK3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="2" unique_id=494964283]
+setting_count = 1
+settings/0/target_node = NodePath("../../../Node3D/l_arm_marker")
+settings/0/pole_node = NodePath("../../../Node3D/l_arm_pole")
+settings/0/root_bone_name = "LeftUpperArm"
+settings/0/root_bone = 8
+settings/0/middle_bone_name = "LeftLowerArm"
+settings/0/middle_bone = 9
+settings/0/pole_direction = 0
+settings/0/end_bone_name = "LeftHand"
+settings/0/end_bone = 10
+settings/0/use_virtual_end = false
+settings/0/extend_end_bone = false
+
+[node name="r_leg_TIK" type="TwoBoneIK3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="3" unique_id=1150070139]
 setting_count = 1
 settings/0/target_node = NodePath("../../../Node3D/r_leg_marker")
-settings/0/pole_node = NodePath("../../../Node3D/r_leg_pol")
+settings/0/pole_node = NodePath("../../../Node3D/r_leg_pole")
 settings/0/root_bone_name = "RightUpperLeg"
 settings/0/root_bone = 60
 settings/0/middle_bone_name = "RightLowerLeg"
@@ -32,13 +46,63 @@ settings/0/end_bone = 62
 settings/0/use_virtual_end = false
 settings/0/extend_end_bone = false
 
-[node name="CopyTransformModifier3D" type="CopyTransformModifier3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="3" unique_id=1893967580]
+[node name="l_leg_TIK" type="TwoBoneIK3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="4" unique_id=1625303646]
+setting_count = 1
+settings/0/target_node = NodePath("../../../Node3D/l_leg_marker")
+settings/0/pole_node = NodePath("../../../Node3D/l_leg_pole")
+settings/0/root_bone_name = "LeftUpperLeg"
+settings/0/root_bone = 55
+settings/0/middle_bone_name = "LeftLowerLeg"
+settings/0/middle_bone = 56
+settings/0/pole_direction = 0
+settings/0/end_bone_name = "LeftFoot"
+settings/0/end_bone = 57
+settings/0/use_virtual_end = false
+settings/0/extend_end_bone = false
+
+[node name="r_arm_modifier" type="CopyTransformModifier3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="5" unique_id=1893967580]
 setting_count = 1
 settings/0/amount = 1.0
 settings/0/apply_bone_name = "RightHand"
 settings/0/apply_bone = 34
 settings/0/reference_type = 1
 settings/0/reference_node = NodePath("../../../Node3D/r_arm_marker")
+settings/0/copy = 2
+settings/0/axes = 7
+settings/0/invert = 0
+settings/0/additive = false
+
+[node name="l_arm_modifier" type="CopyTransformModifier3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="6" unique_id=379057565]
+setting_count = 1
+settings/0/amount = 1.0
+settings/0/apply_bone_name = "LeftHand"
+settings/0/apply_bone = 10
+settings/0/reference_type = 1
+settings/0/reference_node = NodePath("../../../Node3D/l_arm_marker")
+settings/0/copy = 2
+settings/0/axes = 7
+settings/0/invert = 0
+settings/0/additive = false
+
+[node name="r_leg_modifier" type="CopyTransformModifier3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="7" unique_id=1808645991]
+setting_count = 1
+settings/0/amount = 1.0
+settings/0/apply_bone_name = "RightFoot"
+settings/0/apply_bone = 62
+settings/0/reference_type = 1
+settings/0/reference_node = NodePath("../../../Node3D/r_leg_marker")
+settings/0/copy = 2
+settings/0/axes = 7
+settings/0/invert = 0
+settings/0/additive = false
+
+[node name="l_leg_modifier" type="CopyTransformModifier3D" parent="Armature/GeneralSkeleton" parent_id_path=PackedInt32Array(183210111) index="8" unique_id=1768207326]
+setting_count = 1
+settings/0/amount = 1.0
+settings/0/apply_bone_name = "LeftFoot"
+settings/0/apply_bone = 57
+settings/0/reference_type = 1
+settings/0/reference_node = NodePath("../../../Node3D/l_leg_marker")
 settings/0/copy = 2
 settings/0/axes = 7
 settings/0/invert = 0
@@ -52,8 +116,20 @@ transform = Transform3D(1.3113414e-07, -1, 3.821371e-15, 4.3711385e-08, 1.910685
 [node name="r_arm_pole" type="Marker3D" parent="Node3D" index="1" unique_id=2069385027]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3801762, 1.4309856, 0.587692)
 
-[node name="r_leg_marker" type="Marker3D" parent="Node3D" index="2" unique_id=1316807]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07529777, 0.049019456, -0.0053922087)
+[node name="l_arm_marker" type="Marker3D" parent="Node3D" index="2" unique_id=445949493]
+transform = Transform3D(-4.3711374e-08, 1, 1.2705494e-21, 4.3711385e-08, 1.9106859e-15, -1, -0.99999994, -4.371138e-08, -4.371139e-08, -0.741, 1.469, 0.06)
 
-[node name="r_leg_pol" type="Marker3D" parent="Node3D" index="3" unique_id=927685125]
+[node name="l_arm_pole" type="Marker3D" parent="Node3D" index="3" unique_id=1726753126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, 1.431, 0.588)
+
+[node name="r_leg_marker" type="Marker3D" parent="Node3D" index="4" unique_id=1316807]
+transform = Transform3D(-1, 0, -8.742278e-08, -8.742278e-08, -4.371139e-08, 1, -3.821371e-15, 1, 4.371139e-08, 0.07529777, 0.10863674, -0.0053922087)
+
+[node name="r_leg_pole" type="Marker3D" parent="Node3D" index="5" unique_id=927685125]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07529777, 0.5177436, -0.54968554)
+
+[node name="l_leg_marker" type="Marker3D" parent="Node3D" index="6" unique_id=2132825600]
+transform = Transform3D(-1, -8.742278e-08, -3.821371e-15, 0, -4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, -0.075, 0.108617276, -0.005)
+
+[node name="l_leg_pole" type="Marker3D" parent="Node3D" index="7" unique_id=253951220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.075, 0.518, -0.55)
