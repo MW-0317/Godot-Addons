@@ -15,7 +15,7 @@ config/features=PackedStringArray("4.6")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ik-animations/plugin.cfg", "res://addons/mikroutils/plugin.cfg")
+enabled=PackedStringArray("res://addons/ik-animations/plugin.cfg", "res://addons/mikrogravity/plugin.cfg", "res://addons/mikroutils/plugin.cfg")
 
 [physics]
 
